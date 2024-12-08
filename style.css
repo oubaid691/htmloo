@@ -1,0 +1,107 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #e6edf3;
+    text-align: center;
+    direction: rtl;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #58a6ff;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section des planètes */
+.planets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.planets article {
+    background-color: #21262d;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planets article:hover {
+    transform: scale(1.05);
+}
+
+.planets img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.planets h2 {
+    margin: 10px 0;
+    color: #58a6ff;
+    font-size: 1.5em;
+}
+
+.planets p {
+    font-size: 1em;
+    color: #8b949e;
+}
+
+/* Page d'une planète */
+.planet-image {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    color: #0d1117;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1f6feb;
+}
+
+/* Pied de page */
+footer {
+    background-color: #161b22;
+    padding: 10px;
+    color: #8b949e;
+    font-size: 0.9em;
+}
